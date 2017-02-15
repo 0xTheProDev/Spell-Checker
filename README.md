@@ -6,6 +6,7 @@ A Simple Efficient C library for spell checking
 
 ## Usage
 Bash: `./a.out [dictionary] text`
+
 Command-Line: `./a.exe [dictionary] text`
 
 `./a.out` or `./a.exe`: Output File Name
