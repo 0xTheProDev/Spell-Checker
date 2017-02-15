@@ -5,9 +5,10 @@ A Simple Efficient C library for spell checking
 1.0
 
 ## Usage
-Command-Line: `./a [dictionary] text`
+Bash: `./a.out [dictionary] text`
+Command-Line: `./a.exe [dictionary] text`
 
-`./a`: Output File Name
+`./a.out` or `./a.exe`: Output File Name
 
 `[dictionary]`: Dictionary File *(optional)*
 
