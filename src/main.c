@@ -62,7 +62,7 @@ int main(int argc, char* argv[])
     if (!loaded)
     {
         printf("Could not load %s.\n", dictionary);
-        return 1;
+        return 2;
     }
 
     // try to open text
@@ -72,7 +72,7 @@ int main(int argc, char* argv[])
     {
         printf("Could not open %s.\n", text);
         unload();
-        return 1;
+        return 3;
     }
 
     // prepare to report misspellings
@@ -143,7 +143,7 @@ int main(int argc, char* argv[])
         fclose(fp);
         printf("Error reading %s.\n", text);
         unload();
-        return 1;
+        return 3;
     }
 
     // close text
@@ -159,7 +159,7 @@ int main(int argc, char* argv[])
     if (!unloaded)
     {
         printf("Could not unload %s.\n", dictionary);
-        return 1;
+        return 2;
     }
 
 
