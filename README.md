@@ -9,6 +9,7 @@ Bash: `./a.out [dictionary] text`
 
 Command-Line: `./a.exe [dictionary] text`
 
+### Details
 `./a.out` or `./a.exe`: Output File Name
 
 `[dictionary]`: Dictionary File *(optional)*
