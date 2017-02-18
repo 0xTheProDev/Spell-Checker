@@ -33,12 +33,7 @@
  *
  */
 
-#include <ctype.h>
-#include <stdio.h>
-
 #include "include/dictionary.h"
-#undef calculate
-#undef getrusage
 
 // default dictionary
 #define DICTIONARY "dictionaries/large"

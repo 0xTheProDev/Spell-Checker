@@ -34,13 +34,21 @@
  *
  */
 
-#ifndef DICTIONARY_H
-#define DICTIONARY_H
+#ifndef __DICTIONARY_H
+#define __DICTIONARY_H
 
-#include <ctype.h>
-#include <stdbool.h>
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef __CTYPE_H
+#include <CTYPE.H>
+#endif
+#ifndef bool
+#include <STDBOOL.H>
+#endif
+#ifndef __STDIO_H
+#include <STDIO.H>
+#endif
+#ifndef __STDLIB_H
+#include <STDLIB_H>
+#endif
 
 // maximum length for a word
 // (e.g., pneumonoultramicroscopicsilicovolcanoconiosis)
