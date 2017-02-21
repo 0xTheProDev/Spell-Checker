@@ -48,3 +48,6 @@ __Include:__ `#include "include/Dictionary.h"`
 #### <a href="#unload"> `bool unload(void)` </a>
 
 * Unloads dictionary from memory.  Returns true if successful else false.
+
+
+__Copyright (C) 2017, GNU Public License 3.0__
