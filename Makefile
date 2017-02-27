@@ -13,7 +13,7 @@ CC = gcc
 CFLAGS = 
 
 # Executable
-EXE = a.out
+EXE = Spell-Checker
 
 # Executable Directory
 EXEDIR = -o../bin
