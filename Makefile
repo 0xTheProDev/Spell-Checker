@@ -22,13 +22,13 @@ EXEDIR = bin/
 HDRS = dictionary.h
 
 # Include Directory
-INCDIR = src/include/
+INCDIR = -I../src/include
 
 # Library File(s)
 LIBS = -ldictionary
 
 # Library Directory
-LIBDIR = lib/
+LIBDIR = -L../lib
 
 # Source File(s)
 SRCS = main.c
@@ -41,7 +41,7 @@ OBJS = $(SRCS:.c=.o)
 
 # Default Target
 main: $(OBJS) $(INCDIR)/$(HDRS) Makefile
-	$(CC) $(CFLAGS) -o $(EXEDIR)/$(EXE) $(OBJS) $(LIBDIR)/$(LIBS)
+	$(CC) $(CFLAGS) -o $(EXEDIR)/$(EXE) $(OBJS) $(INCDIR) $(LIBDIR)
 
 # Dependencies 
 $(OBJS): $(INCDIR)/$(HDRS) Makefile
