@@ -16,7 +16,7 @@ CFLAGS =
 EXE = a.out
 
 # Executable Directory
-EXEDIR = bin/
+EXEDIR = -o../bin
 
 # Header File(s)
 HDRS = dictionary.h
@@ -34,17 +34,11 @@ LIBDIR = -L../lib
 SRCS = main.c
 
 # Source Directory
-SRCDIR = src/
-
-# Object File(s)
-OBJS = $(SRCS:.c=.o)
+SRCDIR = -c ./src/
 
 # Default Target
-main: $(OBJS) $(INCDIR)/$(HDRS) Makefile
-	$(CC) $(CFLAGS) -o $(EXEDIR)/$(EXE) $(OBJS) $(INCDIR) $(LIBDIR)
-
-# Dependencies 
-$(OBJS): $(INCDIR)/$(HDRS) Makefile
+main: $(INCDIR) $(HDRS) Makefile
+	$(CC) $(CFLAGS) $(EXEDIR) $(EXE) $(SRCDIR)$(SRCS) $(INCDIR) $(LIBDIR) $(LIBS)
 
 # House-keeping
 clean:

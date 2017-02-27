@@ -47,7 +47,7 @@
 #include <STDIO.H>
 #endif
 #ifndef __STDLIB_H
-#include <STDLIB_H>
+#include <STDLIB.H>
 #endif
 
 // maximum length for a word
