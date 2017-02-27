@@ -13,10 +13,10 @@ CC = gcc
 CFLAGS = 
 
 # Executable
-EXE = Spell-Checker
+EXE = Spell-Checker.exe
 
 # Executable Directory
-EXEDIR = -o./bin
+EXEDIR = -o./bin/
 
 # Header File(s)
 HDRS = dictionary.h
@@ -34,11 +34,11 @@ LIBDIR = -L../lib
 SRCS = main.c
 
 # Source Directory
-SRCDIR = -c./src/
+SRCDIR = -c ./src/
 
 # Default Target
 main: $(INCDIR) $(HDRS) Makefile
-	$(CC) $(CFLAGS) $(EXEDIR) $(EXE) $(SRCDIR)$(SRCS) $(INCDIR) $(LIBDIR) $(LIBS)
+	$(CC) $(CFLAGS) $(EXEDIR)$(EXE) $(SRCDIR)$(SRCS) $(INCDIR) $(LIBDIR) $(LIBS)
 
 # House-keeping
 clean:
