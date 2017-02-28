@@ -23,13 +23,13 @@ Command-Line:
 * `text`: Text file to be checked
 
 ## Return Value
-`**0**` Successfuly Executed
+**`0`** Successfuly Executed
 
-`**1**` Invalid Argument Supplied
+**`1`** Invalid Argument Supplied
 
-`**2**` Failed to load/unload Dictionary from Memory
+**`2`** Failed to load/unload Dictionary from Memory
 
-`**3**` Failed to open Text File (PATH specified)
+**`3`** Failed to open Text File (PATH specified)
 
 # DICTIONARY.H
 
