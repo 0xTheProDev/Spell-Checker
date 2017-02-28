@@ -1,3 +1,4 @@
+// FIXME: MERGE these 2 potentially conflicting declaration
 /*
  * DICTIONARY.H
  * 
@@ -33,22 +34,22 @@
  * (this is consistent with Microsoft's own documentation, on MSDN).
  *
  */
+/**
+ * dictionary.h
+ *
+ * Computer Science 50
+ * Problem Set 5
+ *
+ * Declares a dictionary's functionality.
+ */
 
-#ifndef __DICTIONARY_H
-#define __DICTIONARY_H
+#ifndef DICTIONARY_H
+#define DICTIONARY_H
 
-#ifndef __CTYPE_H
-#include <CTYPE.H>
-#endif
-#ifndef bool
-#include <STDBOOL.H>
-#endif
-#ifndef __STDIO_H
-#include <STDIO.H>
-#endif
-#ifndef __STDLIB_H
-#include <STDLIB.H>
-#endif
+#include <ctype.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 // maximum length for a word
 // (e.g., pneumonoultramicroscopicsilicovolcanoconiosis)

@@ -12,34 +12,39 @@ CC = gcc
 # Flags for Compiler
 CFLAGS = 
 
-# Executable
-EXE = Spell-Checker.exe
-
 # Executable Directory
-EXEDIR = -o./bin/
-
-# Header File(s)
-HDRS = dictionary.h
+EXEDIR = ./bin/
+# Executable
+EXE = speller
 
 # Include Directory
-INCDIR = -I../src/include
-
-# Library File(s)
-LIBS = -ldictionary
+INCLUDE_DIR = ./src/include
+INCLUDES = -I$(INCLUDE_DIR)
 
 # Library Directory
-LIBDIR = -L../lib
-
-# Source File(s)
-SRCS = main.c
+LIBDIR = lib/
+# Library
+LIB = dictionary
 
 # Source Directory
-SRCDIR = -c ./src/
+SRCDIR = ./src/
+# Source File(s)
+SRC = main.c
+# Object File(s)
+OBJ = $(SRCS:.c=.o)
+
+all: lib_ main
+	
 
 # Default Target
-main: $(INCDIR) $(HDRS) Makefile
-	$(CC) $(CFLAGS) $(EXEDIR)$(EXE) $(SRCDIR)$(SRCS) $(INCDIR) $(LIBDIR) $(LIBS)
+main:
+	$(CC) -o $(EXEDIR)$(EXE) $(CFLAGS) $(INCLUDES) $(SRCDIR)$(SRC) $(LIBDIR)$(LIB).a
+
+lib_:
+	$(MAKE) -C src/lib
+
 
 # House-keeping
 clean:
-	rm -f core $(EXEDIR)/$(EXE) $(EXEDIR)/*.o $(EXEDIR)/*.exe
+	rm -f core *.o $(EXEDIR)$(EXE) $(EXEDIR)/*.o $(EXEDIR)/*.exe
+	$(MAKE) -C src/lib clean
