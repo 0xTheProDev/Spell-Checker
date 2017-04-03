@@ -1,18 +1,18 @@
-# Spell-Checker
+Spell-Checker	[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+=========
 A Simple Efficient C library for spell checking
-[![license]GPL 3.0](https://github.com/Progyan1997/Spell-Checker/blob/master/LICENSE)
 
 ## Version
 1.0
 
 ## Usage
 Bash:
-```
+``` bash
 ./speller [dictionary] text
 ```
 
 Command-Line:
-```
+``` bash
 ./speller.exe [dictionary] text
 ```
 
