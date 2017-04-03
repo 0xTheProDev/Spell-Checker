@@ -1,5 +1,6 @@
 # Spell-Checker
 A Simple Efficient C library for spell checking
+[![license]GPL 3.0](https://github.com/Progyan1997/Spell-Checker/blob/master/LICENSE)
 
 ## Version
 1.0
