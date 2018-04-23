@@ -1,6 +1,6 @@
 /*
  * MAIN.C
- * 
+ *
  * Implementation of DICTIONARY.H
  *
  * Written by Progyan Bhattacharya <bprogyan@gmail.com>
@@ -33,10 +33,10 @@
  *
  */
 
-#include "include/dictionary.h"
+#include <dictionary.h>
 
 // default dictionary
-#define DICTIONARY "dictionaries/large"
+#define DICT_PATH "dict/large"
 
 int main(int argc, char* argv[])
 {
@@ -48,7 +48,7 @@ int main(int argc, char* argv[])
     }
 
     // determine dictionary to use
-    char* dictionary = (argc == 3) ? argv[1] : DICTIONARY;
+    char* dictionary = (argc == 3) ? argv[1] : DICT_PATH;
 
     // load dictionary
     bool loaded = load(dictionary);
@@ -162,6 +162,6 @@ int main(int argc, char* argv[])
     printf("\nWORDS MISSPELLED:     %d\n", misspellings);
     printf("WORDS IN DICTIONARY:  %d\n", n);
     printf("WORDS IN TEXT:        %d\n", words);
-    
+
     return 0;
 }

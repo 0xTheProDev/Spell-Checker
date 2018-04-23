@@ -7,12 +7,7 @@
  * Implements a dictionary's functionality.
  */
 
-#include <ctype.h>
-#include <stdbool.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-#include "dictionary.h"
+#include <dictionary.h>
 
 typedef struct node {
     bool is_Word;
@@ -23,7 +18,7 @@ node *root = NULL;
 static unsigned int count = 0;
 
 /**
- * Generate key for each character 
+ * Generate key for each character
  */
 static int getkey(char c)
 {

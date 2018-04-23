@@ -1,7 +1,6 @@
-// FIXME: MERGE these 2 potentially conflicting declaration
 /*
  * DICTIONARY.H
- * 
+ *
  * Definitions of types and prototypes of functions for operations on
  * BigInteger formatted data
  *
